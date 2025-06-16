@@ -1,13 +1,80 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-"width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Updated Main Title -->
+  <title>Ma Trận Vận Mệnh AI - Khám Phá Bản Thân & Tương Hợp</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn.glitch.global/beae5651-aaf3-4898-bc23-03d225c96e25/image-removebg-preview%20(8).png?v=1750064015031" type="image/png">
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Khám phá bản thân sâu sắc và sự hòa hợp tình duyên qua Ma Trận Vận Mệnh được phân tích bởi AI. Nhập tên, ngày sinh để nhận cẩm nang cá nhân hoặc xem độ tương hợp. Chính xác, sâu sắc và đầy cảm hứng!">
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Ma Trận Vận Mệnh AI ✨ | Cẩm Nang Cá Nhân & Tương Hợp Đôi Lứa">
+  <meta property="og:description" content="🔮 Hé lộ bí ẩn vận mệnh và tình duyên của bạn với Ma Trận Vận Mệnh AI! Nhận phân tích chi tiết, lời khuyên sâu sắc từ AI. Khám phá ngay!">
+  <meta property="og:image" content="https://cdn.glitch.global/beae5651-aaf3-4898-bc23-03d225c96e25/Leonardo_Anime_XL_Two_young_people_sat_on_a_chair_facing_the_l_2.jpg?v=1750065246468">
+  <meta property="og:url" content="https://matranvanmenh.ai/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ma Trận Vận Mệnh AI">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ma Trận Vận Mệnh AI ✨ | Cẩm Nang Vận Mệnh & Tình Yêu">
+  <meta name="twitter:description" content="🔮 Khám phá bản thân và sự tương hợp với Ma Trận Vận Mệnh AI. Phân tích AI chi tiết, lời khuyên sâu sắc. Nhấn để xem ngay!">
+  <meta name="twitter:image" content="https://cdn.glitch.global/beae5651-aaf3-4898-bc23-03d225c96e25/Leonardo_Anime_XL_Two_young_people_sat_on_a_chair_facing_the_l_2.jpg?v=1750065246468">
+  <meta name="twitter:url" content="https://matranvanmenh.ai/">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+    /* Custom scrollbar for webkit browsers */
+    .scrollbar-thin {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(168, 85, 247, 0.5) rgba(31, 41, 55, 0.3); /* thumb track */
+    }
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+        background: rgba(31, 41, 55, 0.3); /* Corresponds to scrollbar-track-gray-800/30 */
+        border-radius: 10px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: rgba(168, 85, 247, 0.5); /* Corresponds to scrollbar-thumb-purple-700/50 */
+        border-radius: 10px;
+        border: 2px solid rgba(31, 41, 55, 0.3); /* Creates padding around thumb */
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(168, 85, 247, 0.7);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.515.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "framer-motion": "https://esm.sh/framer-motion@^12.18.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-900">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
