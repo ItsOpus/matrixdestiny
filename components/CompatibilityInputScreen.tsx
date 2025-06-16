@@ -39,7 +39,7 @@ const CompatibilityInputScreen: React.FC<CompatibilityInputScreenProps> = ({ onC
         }
         const date1 = validateDob(p1.dob);
         if (!date1) {
-            newErrors.p1Dob = "Ngày sinh Người 1 không hợp lệ (dd/mm/yyyy).";
+            newErrors.p1Dob = "Ngày sinh Người 1 không hợp lệ (DD/MM/YYYY).";
             valid = false;
         }
 
@@ -49,7 +49,7 @@ const CompatibilityInputScreen: React.FC<CompatibilityInputScreenProps> = ({ onC
         }
         const date2 = validateDob(p2.dob);
         if (!date2) {
-            newErrors.p2Dob = "Ngày sinh Người 2 không hợp lệ (dd/mm/yyyy).";
+            newErrors.p2Dob = "Ngày sinh Người 2 không hợp lệ (DD/MM/YYYY).";
             valid = false;
         }
         

@@ -33,7 +33,7 @@ const PersonalInputScreen: React.FC<PersonalInputScreenProps> = ({ onCalculate, 
                 }
             }
         }
-        setError('Định dạng ngày chưa đúng (dd/mm/yyyy) hoặc ngày không hợp lệ!');
+        setError('Định dạng ngày chưa đúng (DD/MM/YYYY) hoặc ngày không hợp lệ!');
     };
 
     return (

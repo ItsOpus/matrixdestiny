@@ -2,20 +2,20 @@
 import { User, Zap, Gem, HeartHandshake, GraduationCap, Dna, Heart, Users } from 'lucide-react';
 import { Translations, LanguageKey } from './types';
 
-export const GEMINI_MODEL_NAME = 'gemini-2.5-flash-preview-04-17';
+export const GEMINI_MODEL_NAME = 'gemini-2.0-flash';
 
 export const translations: Record<LanguageKey, Translations> = {
     vi: {
-        appName: "Ma Trận Vận Mệnh AI",
+        appName: "Ma Trận Vận Mệnh và Thần Số Học",
         welcome: "Chào mừng đến với Cẩm Nang Ma Trận Vận Mệnh",
         personalDescription: "Khám phá bản thân sâu sắc hơn với những phân tích được tạo bởi AI dành riêng cho bạn. Hãy nhập tên và ngày sinh để bắt đầu.",
         compatDescription: "Khám phá sự hòa hợp diệu kỳ giữa hai người. Hãy nhập thông tin của cặp đôi để AI phân tích nhé!",
         nameLabel: "Tên của bạn",
-        dobLabel: "Ngày sinh của bạn (dd/mm/yyyy)",
+        dobLabel: "Ngày sinh của bạn (DD/MM/YYYY)",
         p1NameLabel: "Tên Người 1",
         p2NameLabel: "Tên Người 2",
-        p1DobLabel: "Ngày sinh Người 1 (dd/mm/yyyy)",
-        p2DobLabel: "Ngày sinh Người 2 (dd/mm/yyyy)",
+        p1DobLabel: "Ngày sinh Người 1 (DD/MM/YYYY)",
+        p2DobLabel: "Ngày sinh Người 2 (DD/MM/YYYY)",
         calculate: "Tạo Cẩm Nang Cá Nhân",
         calculateCompat: "Xem Tương Hợp",
         error: "Vui lòng nhập ngày hợp lệ.",
