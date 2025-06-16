@@ -1,0 +1,56 @@
+/*
+ * Ma Trận Vận Mệnh AI - index.css
+ * * Chú thích:
+ * File này dùng để nhập (import) các lớp cơ bản của Tailwind CSS
+ * và định nghĩa các style nền tảng, áp dụng cho toàn bộ ứng dụng.
+ */
+
+/* * --- Nhập các lớp của Tailwind CSS ---
+ * Đây là 3 chỉ thị (directive) quan trọng để Tailwind hoạt động.
+ * @tailwind base: Áp dụng các style mặc định, reset trình duyệt.
+ * @tailwind components: Áp dụng các lớp thành phần của Tailwind.
+ * @tailwind utilities: Áp dụng các lớp tiện ích (ví dụ: text-center, p-4, ...).
+ *
+ * Lưu ý: Trong môi trường React thực tế (Vite, Create React App),
+ * các chỉ thị này sẽ được bộ công cụ xây dựng (build tool) xử lý.
+ */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+ /*
+  * --- Các biến CSS tùy chỉnh (CSS Custom Properties) ---
+  * Bạn có thể định nghĩa các màu sắc, font chữ, v.v... ở đây
+  * để dễ dàng tái sử dụng trong toàn bộ ứng dụng.
+  */
+ :root {
+   /* Ví dụ về định nghĩa màu sắc chủ đạo */
+   --mau-chinh: #a855f7;      /* Tương đương purple-500 */
+   --mau-nen-toi: #111827;   /* Tương đương gray-900 */
+ }
+ 
+ /*
+  * --- Style nền tảng cho thẻ <body> ---
+  * Các style này sẽ được áp dụng cho toàn bộ trang.
+  */
+ body {
+   /*
+    * Sử dụng các biến màu đã định nghĩa ở trên.
+    * Đây là một cách làm hay để quản lý màu sắc tập trung.
+    */
+   background-color: var(--mau-nen-toi);
+ 
+   /*
+    * Các thuộc tính giúp cho việc hiển thị font chữ trở nên mượt mà,
+    * dễ đọc hơn trên các trình duyệt khác nhau.
+    */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ 
+   /*
+    * Đặt cách tính kích thước (box-sizing) mặc định cho tất cả các phần tử,
+    * giúp việc làm layout dễ dàng và dự đoán được hơn.
+    */
+   box-sizing: border-box;
+ }
+ 
